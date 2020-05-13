@@ -1,5 +1,7 @@
 // define the method
-magic8Ball.askQuestion = function(question) {
+// magic8Ball.askQuestion = function(question)
+$(document).ready(function()
+{
  
      // create a random number
      var randomNumber = Math.random();
@@ -15,4 +17,4 @@ magic8Ball.askQuestion = function(question) {
  
      console.log(question);
      console.log(answer);
-};
+});
