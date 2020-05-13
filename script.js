@@ -19,7 +19,7 @@ $(document).ready(function()
      console.log(answer);
 
      function yourQuestion () {
-          var question = prompt (""What is your Question");
+          var question = prompt ("What is your Question?");
            if (question != null) {
                document.getElementById("response").innerHTML = "answer";
            }
