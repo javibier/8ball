@@ -20,8 +20,8 @@ $(document).ready(function()
 
      function yourQuestion () {
           var question = prompt (""What is your Question");
-           if (question ! = null) {
-               document.getElementById("response"),innerHTML = "answer";
+           if (question != null) {
+               document.getElementById("response").innerHTML = "answer";
            }
      }
 });
