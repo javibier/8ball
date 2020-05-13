@@ -17,4 +17,11 @@ $(document).ready(function()
  
      console.log(question);
      console.log(answer);
+
+     function yourQuestion () {
+          var question = prompt (""What is your Question");
+           if (question ! = null) {
+               document.getElementById("response"),innerHTML = "answer";
+           }
+     }
 });
