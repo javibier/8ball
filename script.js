@@ -1,7 +1,6 @@
 // define the method
-// magic8Ball.askQuestion = function(question)
-$(document).ready(function()
-{
+    magic8Ball.askQuestion = function(question)
+
  
      // create a random number
      var randomNumber = Math.random();
@@ -18,12 +17,11 @@ $(document).ready(function()
      console.log(question);
      console.log(answer);
 
-(document).ready(function(){
+$(document).ready(function(){
 
-     function yourQuestion () {
-          var question = prompt ("What is your Question?");
-           if (question != null) {
-               document.getElementById("response").innerHTML = "answer";
-           }
-     }
+    var question = prompt ("What is your Question?");
+    magic8Ball.askQuestion(question);
+    };
+
+    $("#questionButton").click( onClick );
 });
