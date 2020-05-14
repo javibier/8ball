@@ -18,6 +18,8 @@ $(document).ready(function()
      console.log(question);
      console.log(answer);
 
+(document).ready(function(){
+
      function yourQuestion () {
           var question = prompt ("What is your Question?");
            if (question != null) {
