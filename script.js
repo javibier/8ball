@@ -5,7 +5,7 @@ var magic8Ball = {};
 magic8Ball.listOfAnswers = ["No", "Yes", "I don't think so...", "Of course!", "Indubitably", "In your dreams."];
 
 // define the method
-magic8Ball.askQuestion = function(question)
+magic8Ball.askQuestion = function(question) {
 
 
 // create a random number
@@ -19,6 +19,8 @@ var randomIndex = Math.floor(randomNumberForListOfAnswers);
 
 // use that number to index a random number from the answers array
 var answer = this.listOfAnswers[randomIndex];
+
+$("#answer").text( answer );
 
 console.log(question);
 console.log(answer);
