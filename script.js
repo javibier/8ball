@@ -1,3 +1,9 @@
+$(document).ready(function(){
+
+var magic8Ball = {};
+    
+magic8Ball.listOfAnswers = ["No", "Yes", "I don't think so...", "Of course!", "Indubitably", "In your dreams."];
+
 // define the method
 magic8Ball.askQuestion = function(question)
 
@@ -17,10 +23,14 @@ var answer = this.listOfAnswers[randomIndex];
 console.log(question);
 console.log(answer);
 
-$(document).ready(function(){
+
+
+  var onClick = function () {
 
     var question = prompt ("What is your Question?");
     magic8Ball.askQuestion(question);
     };
 
 $("#questionButton").click( onClick );
+
+});
