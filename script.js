@@ -17,7 +17,11 @@ var randomIndex = Math.floor(randomNumberForListOfAnswers);
 // use that number to index a random number from the answers array
 var answer = this.listOfAnswers[randomIndex];
 
+$("#answer").hide();
+
+
 $("#answer").text( answer );
+
 
 console.log(question);
 console.log(answer);
@@ -25,6 +29,8 @@ console.log(answer);
 };
 
   var onClick = function () {
+
+    $("#answer").hide();
 
     var question = prompt ("What is your Question?");
     magic8Ball.askQuestion(question);
