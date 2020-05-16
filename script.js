@@ -25,7 +25,7 @@ $("#answer").text( answer );
 console.log(question);
 console.log(answer);
 
-
+};
 
   var onClick = function () {
 
